@@ -1,4 +1,4 @@
-package utils;
+package src.utils;
 
 /**
  * Represents the result of sorting a permutation using an algorithm.
@@ -32,7 +32,11 @@ package utils;
  * @author Sean White
  */
 
-public record Result(int[] originalArray, int[] sortedArray, int comparisons) {
+public class Result {
+
+    int[] originalArray;
+    int[] sortedArray;
+    int comparisons;
 
     /**
      * Constructs an immutable Result object with the provided parameters.
@@ -52,7 +56,6 @@ public record Result(int[] originalArray, int[] sortedArray, int comparisons) {
      *
      * @return The original permutation
      */
-    @Override
     public int[] originalArray() {
         return originalArray.clone(); // Return a defensive copy
     }
@@ -62,7 +65,6 @@ public record Result(int[] originalArray, int[] sortedArray, int comparisons) {
      *
      * @return The sorted permutation
      */
-    @Override
     public int[] sortedArray() {
         return sortedArray.clone(); // Return a defensive copy
     }
@@ -72,7 +74,6 @@ public record Result(int[] originalArray, int[] sortedArray, int comparisons) {
      *
      * @return The number of comparisons
      */
-    @Override
     public int comparisons() {
         return comparisons;
     }

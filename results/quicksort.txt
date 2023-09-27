@@ -1,0 +1,276 @@
+
+========================================
+RESULTS FOR N = 4
+========================================
+
+Best 10 cases:
+--------------------
+Original: [1, 2, 0, 3]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 9
+
+Original: [1, 2, 3, 0]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 9
+
+Original: [3, 1, 0, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 9
+
+Original: [3, 2, 1, 0]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 9
+
+Original: [0, 1, 3, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [0, 3, 1, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [0, 3, 2, 1]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [1, 0, 2, 3]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [1, 0, 3, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [2, 0, 1, 3]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+
+Worst 10 cases:
+--------------------
+Original: [3, 0, 2, 1]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [3, 1, 2, 0]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [3, 2, 0, 1]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 10
+
+Original: [0, 1, 2, 3]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 11
+
+Original: [3, 0, 1, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 11
+
+Original: [0, 2, 1, 3]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 12
+
+Original: [0, 2, 3, 1]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 13
+
+Original: [1, 3, 0, 2]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 15
+
+Original: [2, 3, 1, 0]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 15
+
+Original: [1, 3, 2, 0]
+Sorted:   [0, 1, 2, 3]
+Comparisons: 16
+
+
+Average comparisons: 10.79
+
+========================================
+RESULTS FOR N = 6
+========================================
+
+Best 10 cases:
+--------------------
+Original: [0, 1, 5, 3, 2, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [0, 2, 1, 4, 3, 5]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [0, 5, 3, 1, 2, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [1, 0, 5, 2, 4, 3]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [1, 2, 0, 5, 3, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [1, 2, 3, 5, 0, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [1, 2, 5, 4, 0, 3]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [1, 3, 4, 5, 2, 0]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [2, 0, 1, 3, 5, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+Original: [2, 1, 4, 3, 5, 0]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 17
+
+
+Worst 10 cases:
+--------------------
+Original: [5, 3, 2, 4, 1, 0]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 32
+
+Original: [5, 3, 4, 1, 2, 0]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 32
+
+Original: [0, 3, 1, 5, 4, 2]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 33
+
+Original: [2, 3, 5, 0, 4, 1]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 33
+
+Original: [3, 1, 0, 2, 5, 4]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 33
+
+Original: [4, 1, 0, 3, 2, 5]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 33
+
+Original: [4, 2, 5, 0, 3, 1]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 33
+
+Original: [1, 4, 0, 2, 5, 3]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 34
+
+Original: [1, 5, 3, 4, 0, 2]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 34
+
+Original: [2, 0, 3, 5, 4, 1]
+Sorted:   [0, 1, 2, 3, 4, 5]
+Comparisons: 36
+
+
+Average comparisons: 21.71
+
+========================================
+RESULTS FOR N = 8
+========================================
+
+Best 10 cases:
+--------------------
+Original: [0, 1, 4, 3, 6, 7, 5, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 4, 5, 3, 7, 6, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 5, 2, 6, 3, 7, 4]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 5, 3, 4, 7, 6, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 5, 6, 4, 7, 3, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 5, 7, 6, 4, 3, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 6, 3, 2, 4, 7, 5]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 6, 4, 5, 7, 3, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 6, 5, 3, 4, 7, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+Original: [0, 1, 6, 7, 3, 4, 2, 5]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 26
+
+
+Worst 10 cases:
+--------------------
+Original: [7, 6, 2, 0, 3, 4, 5, 1]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 59
+
+Original: [4, 1, 2, 6, 3, 5, 7, 0]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 60
+
+Original: [7, 5, 4, 1, 0, 3, 2, 6]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 60
+
+Original: [2, 4, 0, 3, 5, 6, 1, 7]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 61
+
+Original: [4, 0, 3, 5, 1, 2, 6, 7]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 61
+
+Original: [6, 0, 5, 3, 4, 7, 2, 1]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 61
+
+Original: [6, 7, 5, 3, 1, 2, 0, 4]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 61
+
+Original: [7, 1, 6, 0, 3, 2, 4, 5]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 63
+
+Original: [3, 4, 0, 1, 2, 7, 6, 5]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 64
+
+Original: [7, 0, 4, 1, 3, 5, 6, 2]
+Sorted:   [0, 1, 2, 3, 4, 5, 6, 7]
+Comparisons: 64
+
+
+Average comparisons: 33.36

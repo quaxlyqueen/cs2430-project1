@@ -1,4 +1,4 @@
-package algorithms;
+package src.algorithms;
 
 /**
  * The `HeapSort` class provides an implementation of the heapsort algorithm.
@@ -30,11 +30,13 @@ public class HeapSort {
 
         // Build heap (rearrange array)
         for (int i = n / 2 - 1; i >= 0; i--) {
+            comparisons++;
             heapify(arr, n, i);
         }
 
         // One by one extract an element from heap
         for (int i = n - 1; i > 0; i--) {
+            comparisons++;
             // Swap current root with end
             swap(arr, 0, i);
             // Call max heapify on the reduced heap
@@ -58,6 +60,7 @@ public class HeapSort {
         if (left < n) {
             comparisons++;  // Incrementing the counter for comparison with largest
             if (arr[left] > arr[largest]) {
+                comparisons++;
                 largest = left;
             }
         }
@@ -66,12 +69,14 @@ public class HeapSort {
         if (right < n) {
             comparisons++;  // Incrementing the counter for comparison with largest
             if (arr[right] > arr[largest]) {
+                comparisons++;
                 largest = right;
             }
         }
 
         // If the largest is not root
         if (largest != i) {
+            comparisons++;
             swap(arr, i, largest);
             // Recursively heapify the affected sub-tree
             heapify(arr, n, largest);

@@ -1,8 +1,10 @@
-package algorithms;
+package src.algorithms;
+
+import java.util.Random;
 
 public class QuickSort {
 
-	private static int quickSortCounter = 0;
+	private int comparisons = 0;
 
     /**
      * Public method for the user to use quick sort.
@@ -10,7 +12,7 @@ public class QuickSort {
      * @param int[] arr, an array containing a permutation.
      * @return sorted array
      */
-    public static void quickSort(int[] arr) {
+    public void sort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
     }
 
@@ -21,9 +23,9 @@ public class QuickSort {
      * @param low
      * @param high
      */
-    private static void quickSort(int[] arr, int low, int high) {
+    private void quickSort(int[] arr, int low, int high) {
     	if (low < high + 1) {
-    		quickSortCounter++;
+    		comparisons++;
     		int p = partition(arr, low, high);
     		quickSort(arr, low, p - 1); 		
     		quickSort(arr, p + 1, high); 		
@@ -37,7 +39,7 @@ public class QuickSort {
      * @param index1
      * @param index2
      */
-    private static void swap(int[] arr, int index1, int index2) {
+    private void swap(int[] arr, int index1, int index2) {
     	int temp = arr[index1];
     	arr[index1] = arr[index2];
     	arr[index2] = temp;
@@ -49,7 +51,7 @@ public class QuickSort {
      * @param high
      * @return random pivot
      */
-    private static int getPivot(int low, int high) {
+    private int getPivot(int low, int high) {
     	Random rand = new Random();
     	return rand.nextInt((high - low) + 1) + low;
     }
@@ -63,17 +65,26 @@ public class QuickSort {
      * @param high
      * @return pivot index
      */
-    private static int partition(int[] arr, int low, int high) {
+    private int partition(int[] arr, int low, int high) {
     	swap(arr, low, getPivot(low, high));
     	int border = low + 1;
     	for (int i = border; i <= high; i++) {
-    		quickSortCounter++;
+    		comparisons++;
     		if (arr[i] < arr[low]) {
-    			quickSortCounter++;
+    			comparisons++;
     			swap(arr, i, border++);
     		}
     	}
     	swap(arr, low, border - 1);
     	return border - 1;
+    }
+
+    /**
+     * Retrieves the count of comparisons made during the sorting process.
+     *
+     * @return The number of comparisons made during sorting.
+     */
+    public int getComparisonCount() {
+        return comparisons;
     }
 }
